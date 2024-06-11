@@ -1,0 +1,57 @@
+require("leaf").setup({
+    underlineStyle       = "underline",
+    commentStyle         = "bold",
+    functionStyle        = "NONE",
+    keywordStyle         = "italic",
+    statementStyle       = "bold",
+    typeStyle            = "NONE",
+    variablebuiltinStyle = "italic",
+    transparent          = true,
+    colors               = {
+        bg_normal     = "transparent",
+        bg_dim        = "#323232", --Horizontal Bar, Float background, selection
+        bg_dimmer     = "#A54242", -- highlingting, <>ff
+        fg_normal     = "#babdc9",
+        fg_dim        = "#babdc9", -- :Commands
+        fg_dimmer     = "#00ff00", -- Unknown
+        fg_comment    = "#A89d9d",
+        fg_colored_bg = "#59ADDf",
+        red_soft      = "#A54242",
+        red_hard      = "#de5756", -- Top Directory in nvim-tree
+        green_soft    = "#8abeb7", -- lua variables
+        green_hard    = "#d5724f", --Filenames, lua functions
+        yellow_soft   = "#f1b46f",
+        yellow_hard   = "#f0c674",
+        blue_soft     = "#778AAB", -- Some git stuff
+        blue_hard     = "#59AADF",
+        purple_soft   = "#9A8C9D", -- Syntax
+        purple_hard   = "#686686",
+        teal_soft     = "#A89D9D",
+        teal_hard     = "#778AA8",
+    },
+    colors_mountain      = {
+        bg_normal     = "transparent",
+        bg_dim        = "#1C122E", --Horizontal Bar, Float background, selection
+        bg_dimmer     = "#6E508C", -- highlingting, <>ff
+        fg_normal     = "#e2c4cf",
+        fg_dim        = "#e2c4cf", -- :Commands
+        fg_dimmer     = "#00ff00", -- Unknown
+        fg_comment    = "#A89d9d",
+        fg_colored_bg = "#59ADDf",
+        red_soft      = "#A54242",
+        red_hard      = "#6E508C", -- Top Directory in nvim-tree
+        green_soft    = "#AD8BB0", -- lua variables
+        green_hard    = "#C47A9E", --Filenames, lua functions
+        yellow_soft   = "#f1b46f",
+        yellow_hard   = "#f0c674",
+        blue_soft     = "#6E508C", -- Some git stuff
+        blue_hard     = "#59AADF",
+        purple_soft   = "#8abeb7", -- Syntax
+        purple_hard   = "#686686",
+        teal_soft     = "#A89D9D",
+        teal_hard     = "#778AA8",
+    },
+    overrides            = {},
+    theme                = "light",  -- default, based on vim.o.background, alternatives: "light", "dark"
+    contrast             = "medium", -- alternatives: "low", "medium", "high"
+})

@@ -1,0 +1,156 @@
+* {{
+    /*background: {background};*/
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 0;
+    font-family: FiraCode Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}}
+
+window#waybar {{
+    background: rgba(0, 0, 0, 0);
+    color: {foreground};
+}}
+
+#waybar .popup {{
+    background: {background};
+    border-radius: 10px;
+}}
+
+tooltip {{
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: {background};
+    background: {background};
+}}
+
+#workspaces button {{
+    padding: 5px;
+    color: {color1};
+    margin-right: 5px;
+}}
+
+#workspaces button.active {{
+    color: #a6adc8;
+}}
+
+#workspaces button.focused {{
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}}
+
+#workspaces button.urgent {{
+    color: {background};
+    background: #a6e3a1;
+    border-radius: 10px;
+}}
+
+#workspaces button:hover {{
+    background: {background};
+    color: {foreground};
+    border-radius: 10px;
+}}
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-weather,
+#custom-power,
+#custom-rofi,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {{
+    background: {background};
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+}}
+
+#tray {{
+    border-radius: 10px;
+    margin-right: 10px;
+}}
+
+#workspaces {{
+
+    border-radius: 0px 10px 10px 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 5px;
+}}
+
+#custom-language {{
+    color: {color6};
+    border-left: 0px;
+    border-right: 0px;
+}}
+
+#window {{
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background: {background};
+}}
+
+#clock {{
+    color: {color3};
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-right: 0px;
+}}
+
+#network {{
+    color: {color3};
+    border-left: 0px;
+    border-right: 10px;
+    margin-right: 10px;
+    border-radius: 0px 10px 10px 0px;
+}}
+
+#custom-power {{
+    color: {color3};
+    border-radius: 10px 10px 10px 10px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}}
+
+#pulseaudio {{
+    color: {color3};
+    border-radius: 10px 0px 0px 10px;
+    border-left: 0px;
+    border-right: 0px;
+}}
+
+#pulseaudio.microphone {{
+    color: {color3};
+    border-radius: 0px 10px 10px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0px 10px;
+    /* margin-right: 5px; */
+}}
+
+#battery {{
+    color: {color3};
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 0px;
+    border-left: 0px;
+}}
+
+#custom-weather {{
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+}}

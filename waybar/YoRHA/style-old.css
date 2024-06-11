@@ -1,0 +1,127 @@
+* {
+    background: #21201c;
+    border: none;
+    font-family: FiraCode Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0);
+    color: #c7c7c6;
+}
+
+#waybar .popup {
+    background: #21201c;
+    }
+
+tooltip {
+        border-width: 2px;
+    border-style: solid;
+    border-color: #21201c;
+    background: #21201c;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313245;
+    /* margin: 5px; */
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    }
+
+#workspaces button.urgent {
+    color: #21201c;
+    background: #a6e3a1;
+    }
+
+#workspaces button:hover {
+    background: #21201c;
+    color: #c7c7c6;
+    }
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-weather,
+#custom-power,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {
+    background: #21201c;
+    padding: 0px 10px;
+    /* margin: 3px 0px; */
+    /* margin-top: 10px; */
+}
+
+#tray {
+        /* margin-right: 10px; */
+}
+
+#workspaces {
+
+        /* margin-left: 0px; */
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#custom-language {
+    color: #aaa590;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#window {
+        /* margin-left: 60px; */
+    /* margin-right: 60px; */
+    background: #21201c;
+}
+
+#clock {
+    color: #aaa491;
+        /* margin-left: 20px; */
+    /* margin-right: 0px; */
+    border-right: 0px;
+}
+
+#network {
+    color: #aaa491;
+    border-left: 0px;
+    border-right: 10px;
+    /* margin-right: 10px; */
+    }
+
+#custom-power {
+    color: #aaa491;
+        border-left: 0px;
+    border-right: 0px;
+    /* margin-left: 10px; */
+    /* margin-right: 20px; */
+}
+
+#pulseaudio {
+    color: #aaa491;
+        border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #aaa491;
+        border-left: 0px;
+    border-right: 0px;
+    padding: 0px 10px;
+    /* margin-right: 5px; */
+}

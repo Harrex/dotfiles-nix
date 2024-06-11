@@ -1,0 +1,133 @@
+* {{
+    /*background: {background};*/
+    background: {background};
+    border: none;
+        font-family: FiraCode Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}}
+
+#waybar {{
+    border-width: 2px;
+    border-style: solid;
+    border-color: {color1};
+    border-color: {color1};
+    /* background: rgba(0, 0, 0, 0); */
+    color: {foreground};
+}}
+
+#waybar .popup {{
+    background: {background};
+    }}
+
+tooltip {{
+        border-width: 2px;
+    border-style: solid;
+    border-color: {background};
+    background: {background};
+}}
+
+#workspaces button {{
+    padding: 5px;
+    color: {color8};
+    /* margin: 5px; */
+}}
+
+#workspaces button.active {{
+    color: {color2};
+}}
+
+#workspaces button.focused {{
+    color: {color2};
+    background: {color3};
+    }}
+
+#workspaces button.urgent {{
+    color: {background};
+    background: {color5};
+    }}
+
+#workspaces button:hover {{
+    background: {background};
+    color: {foreground};
+    }}
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-weather,
+#custom-power,
+#custom-rofi,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {{
+    background: {background};
+    padding: 0px 10px;
+    /* margin: 3px 0px; */
+    /* margin-top: 10px; */
+}}
+
+#tray {{
+        /* margin-right: 10px; */
+}}
+
+#workspaces {{
+
+        /* margin-left: 0px; */
+    padding-right: 0px;
+    padding-left: 5px;
+}}
+
+#custom-language {{
+    color: {color6};
+    border-left: 0px;
+    border-right: 0px;
+}}
+
+#window {{
+        /* margin-left: 60px; */
+    /* margin-right: 60px; */
+    background: {background};
+}}
+
+#clock {{
+    color: {color4};
+        /* margin-left: 20px; */
+    /* margin-right: 0px; */
+    border-right: 0px;
+}}
+
+#network {{
+    color: {color4};
+    border-left: 0px;
+    border-right: 10px;
+    /* margin-right: 10px; */
+    }}
+
+#custom-power {{
+    color: {color4};
+        border-left: 0px;
+    border-right: 0px;
+    /* margin-left: 10px; */
+    /* margin-right: 20px; */
+}}
+
+#pulseaudio {{
+    color: {color4};
+        border-left: 0px;
+    border-right: 0px;
+}}
+
+#pulseaudio.microphone {{
+    color: {color4};
+        border-left: 0px;
+    border-right: 0px;
+    padding: 0px 10px;
+    /* margin-right: 5px; */
+}}

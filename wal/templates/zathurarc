@@ -1,0 +1,79 @@
+map n navigate next
+map t navigate previous
+
+map <Space> navigate next
+map <Return> navigate previous
+set first-page-column 1
+
+### zathura-pywal ###
+# Allow recolor
+set recolor 'true'
+
+# Don't allow original hue when recoloring
+set recolor-keephue 'false'
+
+# Don't keep original image colors while recoloring
+set recolor-reverse-video 'false'
+
+# Command line completion entries
+set completion-fg '{cursor}'
+set completion-bg '{background}'
+
+# Command line completion group elements
+set completion-group-fg '{color2}'
+set completion-group-bg '{background}'
+
+# Current command line completion element
+set completion-highlight-fg '{background}'
+set completion-highlight-bg '{cursor}'
+
+# Default foreground/background color
+set default-bg "{background}"
+
+# Input bar
+set inputbar-fg '{cursor}'
+set inputbar-bg '{background}'
+
+# Notification
+set notification-fg '{cursor}'
+set notification-bg '{background}'
+
+# Error notification
+set notification-error-fg '{cursor}'
+set notification-error-bg '{color1}'
+
+# Warning notification
+set notification-warning-fg '{cursor}'
+set notification-warning-bg '{color1}'
+
+# Tab - TODO
+# set tabbar-fg
+# set tabbar-bg
+
+# Focused tab - TODO
+# set tabbar-focus-fg
+# set tabbar-focus-bg
+
+# Status bar
+set statusbar-fg '{cursor}'
+set statusbar-bg '{background}'
+
+# Highlighting parts of the document (e.g. show search results)
+set highlight-color '{color2}'
+set highlight-active-color '{color2}'
+
+# Represent light/dark colors in recoloring mode
+set recolor-lightcolor rgba(0,0,0,0)
+set recolor-darkcolor '{cursor}'
+
+# 'Loading...' text
+set render-loading-fg '{cursor}'
+set render-loading-bg '{background}'
+
+# Index mode
+set index-fg '{cursor}'
+set index-bg '{background}'
+
+# Selected element in index mode
+set index-active-fg '{background}'
+set index-active-bg '{cursor}'

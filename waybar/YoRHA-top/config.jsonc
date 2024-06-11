@@ -1,0 +1,163 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    // "width": 97,
+    "modules-right": [
+        "custom/mpd",
+        "custom/sep",
+        "custom/rofi",
+        "custom/keyboardtoggle",
+        // "hyprland/workspaces",
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "clock"
+    ],
+
+    "modules-center": ["hyprland/workspaces"],
+
+    "modules-left": [
+        "custom/power",
+        "network",
+        "backlight",
+        "battery",
+        "tray"
+    ],
+
+    "custom/sep": {
+        "format": "|"
+    },
+
+    "custom/mpd": {
+        "format": "󰎇 {} ",
+        "exec": "mpc current | sed 's/&/&amp;/g'; mpc idleloop player | while read event; do mpc current | sed 's/&/&amp;/g'; done",
+        "on-click": "mpc toggle"
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "shutdown now"
+    },
+
+    "custom/rofi": {
+        "format": ">_",
+        "on-click": "rofi --show-icons -show drun"
+    },
+
+    "custom/keyboardtoggle": {
+        "format": " ",
+        "on-click": "/home/harrek/Scripts/enable-disable-laptop-keyboard.sh"
+    },
+
+    "hyprland/window": {
+        "format": "{}",
+        "on-click": "hyprctl dispatch killactive"
+    },
+    
+    "hyprland/workspaces": {
+        "format-icons": {
+		"1": "",
+		"2": "",
+		"3": "󰠮",
+		"4": "",
+		// "5": "",
+		// "6": "",
+		// "7": "",
+		// "8": "",
+		// "9": "",
+		// "10": "",
+		// "active": "",
+		"default": ""
+	},
+    // "format": "{icon}"
+    "format": "{name}"
+    },
+
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        //"format": "{icon}",
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+
+    "clock": {
+        // "format": "{: %H:%M   %a, %d/%m}",
+        "format": "{:%H:%M   %a, %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃛", "󰃞", "󰃟", "󰃠"],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰁿", "󰂁", "󰂂", "󱟢"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "tooltip": false,
+        "format-muted": " Mute",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "amixer set Master 1%+",
+        "on-scroll-down": "amixer set Master 1%-",
+        "scroll-step": 5,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "󰍬 {volume}%",
+        "format-source-muted": " Muted",
+        "on-click": "pavucontrol",
+        "on-scroll-up": "amixer set Capture 1%+",
+        "on-scroll-down": "amixer set Capture 1%-",
+        "scroll-step": 5
+    },
+
+    "network": {
+        "interface": "wlp170s0",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({ipaddr})   ",
+        "format-ethernet": "{ifname}   ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "format-disconnected": "  ",
+        "tooltip-format": "{ifname}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)   ",
+        "tooltip-format-ethernet": "{ifname}   ",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    }
+} 
