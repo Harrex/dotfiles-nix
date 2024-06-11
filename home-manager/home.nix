@@ -29,6 +29,7 @@
         # Command Line
         glow # Terminal markdown viewer
         git
+        gh
         jq # JSON parser
         ripgrep # nvim-telescope dep. 
         tree
@@ -39,6 +40,7 @@
         caligula # Flashing tool - img to usb etc.
         stow
         btop
+        dust
 
         ffmpeg
         feh
